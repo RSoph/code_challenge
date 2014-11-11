@@ -1,0 +1,5 @@
+I've attached two JSON datasets. The "sample.json" is a series of simplified "world" objects (databubbles). The radius value in each world object is in meters, and it represents the radial size of the world itself, using the "loc" point (formatted as lon/lat) as the center. Some worlds have a "timestart" and "timeend" which is the time in which the world is active. Otherwise, the world is always active. 
+
+The "user.json" is a mock user's current information (their lon/lat location "userloc", and their current time "usertime").
+
+The task is to determine which active worlds the user is inside (within a world's radius and within the world's time period) based on the user's current location and time. Then, develop a system of ranking the worlds the user is in based on relevance between the "tags" string array associated with each world and the user "tags" string array.
